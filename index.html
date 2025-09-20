@@ -28,11 +28,14 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(0, 0, 0, 0.95);
-            backdrop-filter: blur(10px);
+            background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('https://www.shutterstock.com/image-vector/barbeque-icon-seamless-pattern-background-600nw-2442396333.jpg');
+            background-size: 200px;
+            background-repeat: repeat;
+            backdrop-filter: blur(15px);
             z-index: 1000;
-            padding: 1rem 0;
+            padding: 2rem 0;
             border-bottom: 2px solid #d4a574;
+            min-height: 120px;
         }
 
         .nav-container {
@@ -54,8 +57,8 @@
         }
 
         .logo img {
-            width: 60px;
-            height: 60px;
+            width: 120px;
+            height: 120px;
             margin-right: 1rem;
             border-radius: 50%;
         }
@@ -98,7 +101,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding-top: 80px;
+            padding-top: 140px;
         }
 
         .hero-container {
@@ -112,6 +115,12 @@
 
         .hero-content {
             text-align: left;
+        }
+
+        .hero-logo {
+            width: 300px;
+            height: 300px;
+            margin: 0 0 2rem 0;
         }
 
         .hero-content h1 {
@@ -130,6 +139,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-left: 12rem;
+            margin-top: 12rem;
         }
 
         .rotating-image {
@@ -468,6 +479,12 @@
                 text-align: center;
             }
 
+            .hero-logo {
+                width: 200px;
+                height: 200px;
+                margin: 0 auto 1.5rem auto;
+            }
+
             .hero-content h1 {
                 font-size: 2.5rem;
             }
@@ -514,7 +531,6 @@
     <nav>
         <div class="nav-container">
             <a href="#home" class="logo">
-                <img src="logo.png" alt="Barney's Karahiwala Logo">
                 BARNEY'S KARAHIWALA
             </a>
             <ul class="nav-links" id="navLinks">
@@ -536,6 +552,7 @@
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
+                <img src="logoyellow.png" alt="Barney's Karahiwala Logo" class="hero-logo">
                 <h1>BARNEY'S KARAHIWALA</h1>
                 <p>Authentic Pakistani Cuisine in Surrey</p>
                 <a href="#menu" class="btn">Explore Our Menu</a>
